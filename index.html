@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Contact form</title>
+	</head>
+	<body>
+		<div class="form-container">
+			<h1>Contact Us</h1>
+			<form class="form">
+				<div class="input-container">
+					<label class="label-star" for="">First Name</label>
+					<input type="text" />
+				</div>
+				<div class="input-container">
+					<label class="label-star" for="">Last Name</label>
+					<input type="text" />
+				</div>
+				<div class="input-container email-container">
+					<label class="label-star" for="">Email</label>
+					<input type="email" />
+				</div>
+				<div class="input-container radio-container">
+					<label class="label-star" for="">Query Type</label>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-</body>
+					<div class="radio">
+						<input type="radio" name="query-type"/>
+						<label for="">General Enquiry</label>
+					</div>
+					<div class="radio">
+						<input type="radio" name="query-type"/>
+						<label for="">Support Request</label>
+					</div>
+				</div>
+				<div class="input-container message-container">
+					<label class="label-star" for="">Message</label>
+					<textarea class="message" cols="30" rows="10"></textarea>
+				</div>
+				<div class="checkbox-container">
+					<input type="checkbox" />
+					<label for="">I consent to being contacted by the team</label>
+				</div>
+				<button class="btn" type="submit">Submit</button>
+			</form>
+		</div>
+		<script src="./javascript/main.js"></script>
+	</body>
 </html>
