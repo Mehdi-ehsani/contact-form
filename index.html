@@ -17,36 +17,42 @@
 			<h1>Contact Us</h1>
 			<form class="form">
 				<div class="input-container">
-					<label class="label-star" for="">First Name</label>
-					<input type="text" />
+					<label class="label-star" for="0">First Name</label>
+					<input type="text" class="input" id="0"/>
+					<p class="error"></p>
 				</div>
 				<div class="input-container">
-					<label class="label-star" for="">Last Name</label>
-					<input type="text" />
+					<label class="label-star" for="1">Last Name</label>
+					<input type="text" class="input" id="1"/>
+					<p class="error"></p>
 				</div>
-				<div class="input-container email-container">
-					<label class="label-star" for="">Email</label>
-					<input type="email" />
+				<div class="input-container email-container ">
+					<label class="label-star" for="2">Email</label>
+					<input type="text" class="input" id="2"/>
+					<p class="error"></p>
 				</div>
-				<div class="input-container radio-container">
-					<label class="label-star" for="">Query Type</label>
+				<div class="input-container radio-container  ">
+					<label class="label-star" >Query Type</label>
 
 					<div class="radio">
-						<input type="radio" name="query-type"/>
-						<label for="">General Enquiry</label>
+						<input type="radio" name="query-type" id="3"/>
+						<label >General Enquiry</label>
 					</div>
 					<div class="radio">
-						<input type="radio" name="query-type"/>
-						<label for="">Support Request</label>
+						<input type="radio" name="query-type" id="4"/>
+						<label >Support Request</label>
 					</div>
+					<p class="error"></p>
 				</div>
 				<div class="input-container message-container">
-					<label class="label-star" for="">Message</label>
-					<textarea class="message" cols="30" rows="10"></textarea>
+					<label class="label-star" for="3">Message</label>
+					<textarea class="message" cols="30" rows="10" class="input" id="5"></textarea>
+					<p class="error"></p>
 				</div>
 				<div class="checkbox-container">
-					<input type="checkbox" />
-					<label for="">I consent to being contacted by the team</label>
+					<input type="checkbox" id="6"/>
+					<label >I consent to being contacted by the team</label>
+					<p class="error"></p>
 				</div>
 				<button class="btn" type="submit">Submit</button>
 			</form>
