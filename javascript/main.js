@@ -1,13 +1,13 @@
 const radioBtn = document.querySelectorAll(".radio input");
 const inputs = document.querySelectorAll(".input");
 const form = document.querySelector(".form");
-const firstName = document.getElementById("0");
-const lastName = document.getElementById("1");
-const email = document.getElementById("2");
-const radio1 = document.getElementById("3");
-const radio2 = document.getElementById("4");
-const message = document.getElementById("5");
-const check = document.getElementById("6");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("email");
+const radio1 = document.getElementById("radio1");
+const radio2 = document.getElementById("radio2");
+const message = document.getElementById("message");
+const check = document.getElementById("checkbox");
 const succesMessage = document.querySelector(".succes-message-container");
 
 
