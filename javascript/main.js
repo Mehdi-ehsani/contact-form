@@ -8,6 +8,7 @@ const radio1 = document.getElementById("3");
 const radio2 = document.getElementById("4");
 const message = document.getElementById("5");
 const check = document.getElementById("6");
+const succesMessage = document.querySelector(".succes-message-container");
 
 
 radioBtn.forEach((radio, index) => {
@@ -137,6 +138,10 @@ const validateForm = () => {
         radio1.parentNode.classList.remove("selected");
         radio2.parentNode.classList.remove("selected");
         check.checked = false;
+		succesMessage.classList.add("show-succes");
+		setTimeout(() => {
+		succesMessage.classList.remove("show-succes");
+		},3000)
     }else {
         console.log("error")
     }
