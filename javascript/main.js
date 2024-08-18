@@ -128,7 +128,6 @@ const validateForm = () => {
     }
 
     if(isValid) {
-        console.log("succes");
         firstName.value = "";
         lastName.value = "";
         email.value = "";
@@ -143,7 +142,7 @@ const validateForm = () => {
 		succesMessage.classList.remove("show-succes");
 		},3000)
     }else {
-        console.log("error")
+        null
     }
 
 };
