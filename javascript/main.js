@@ -9,7 +9,7 @@ const radio2 = document.getElementById("4");
 const message = document.getElementById("5");
 const check = document.getElementById("6");
 
-//!for radio button bg-color in focus
+
 radioBtn.forEach((radio, index) => {
 	radio.addEventListener("focus", (e) => {
 		const children = radio.parentNode.parentNode.children;
@@ -23,10 +23,23 @@ radioBtn.forEach((radio, index) => {
 		}
 	});
 });
+
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	validateForm();
 });
+
+inputs.forEach(input => {
+	input.addEventListener("cut" , (e) => {
+		e.preventDefault()
+	});
+	input.addEventListener("copy" , (e) => {
+		e.preventDefault()
+	});
+	input.addEventListener("paste" , (e) => {
+		e.preventDefault()
+	});
+})
 
 
 const setError = (element, message) => {
@@ -121,23 +134,11 @@ const validateForm = () => {
         message.value = "";
         radio1.checked = false;
         radio2.checked = false;
+        radio1.parentNode.classList.remove("selected");
+        radio2.parentNode.classList.remove("selected");
         check.checked = false;
     }else {
         console.log("error")
     }
 
 };
-// inputs.forEach(( input , index) => {
-//     input.addEventListener("keydown", (e) => {
-//         // if (e.key === "Enter") {
-//         //     let step = index + 1
-//         //     e.preventDefault();
-//         //     document.getElementById(step).focus();
-//         //     console.log(++index)
-//         //     if(step === 6) {
-//         //         step = 0
-//         //     }
-//         // }
-
-//     })
-// })
